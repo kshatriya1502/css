@@ -14,9 +14,7 @@ const accessKey = 'o4NUg5r7nGm22dyh9DgsXYjcXVvJ-WcyB5NJeiixogE'
 
             const response = await fetch(url) ; 
             const data = await response.json();
-            if(page != 0){
-                searchResult.innerHTML = "" ; 
-            }
+            
             
             const results  = data.results
 
@@ -36,6 +34,12 @@ const accessKey = 'o4NUg5r7nGm22dyh9DgsXYjcXVvJ-WcyB5NJeiixogE'
         searchForm.addEventListener('submit' , (e)=>{
             e.preventDefault();
             // page = page+1 ;
+            // if(searchResult.innerHTML != "")
+            // {
+                
+            // }
+            searchResult.innerHTML = "" ;
+            
             searchImage();
         })
         showMoreBtn.addEventListener("click" , ()=>{

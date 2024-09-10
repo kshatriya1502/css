@@ -14,7 +14,7 @@ const accessKey = 'o4NUg5r7nGm22dyh9DgsXYjcXVvJ-WcyB5NJeiixogE'
 
             const response = await fetch(url) ; 
             const data = await response.json();
-            if(page === 1){
+            if(page != 0){
                 searchResult.innerHTML = "" ; 
             }
             
